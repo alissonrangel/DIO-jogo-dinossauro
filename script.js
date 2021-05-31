@@ -7,13 +7,13 @@ let isJumping = false;
 let position = 0;
 let pontos = 0;
  
-var somExplosao=document.getElementById("somExplosao");
-var musica=document.getElementById("musica");
-var somResgate=document.getElementById("somResgate");
+//var somPulo=document.getElementById("somPulo");
+//var somMorte=document.getElementById("somMorte");
+//var somResgate=document.getElementById("somResgate");
 
 //Música em loop
-musica.addEventListener("ended", function(){ musica.currentTime = 0; musica.play(); }, false);
-musica.play();
+//musica.addEventListener("ended", function(){ musica.currentTime = 0; musica.play(); }, false);
+//musica.play();
 
 
 function handleKeyUp(event) {
@@ -27,7 +27,7 @@ function handleKeyUp(event) {
 
 function jump() {
 
-  somResgate.play();
+  //somPulo.play();
   isJumping = true;
 
   let upInterval = setInterval(()=>{
@@ -52,11 +52,11 @@ function jump() {
   }, 20);
 }
 
-function gameOverMusic() {
-  document.body.innerHTML += `<audio src="sons/gameover.mp3" preload="auto" id="somGameover"></audio>`;
-  let somGameover=document.getElementById("somGameover");
-  somGameover.play();
-}
+// function gameOverMusic() {
+//   document.body.innerHTML += `<audio src="sons/gameover.mp3" preload="auto" id="somGameover"></audio>`;
+//   let somGameover=document.getElementById("somGameover");
+//   somGameover.play();
+// }
 
 function createCactus() {
   const cactus = document.createElement('div');
@@ -82,13 +82,15 @@ function createCactus() {
       dead.innerHTML = "<div id='contato' class='anima'></div>"
       background.appendChild(dead);
       
-      somExplosao.play();      
+      //somMorte.play();      
       clearTimeout(timeOut);
       
       setTimeout(() => {
-        musica.pause();
-        document.body.innerHTML = `<h1 class="game-over">Pontos: ${pontos}</h1><h1 class="game-over">Fim de jogo</h1>`;
-        gameOverMusic();
+        //musica.pause();
+        document.body.innerHTML = `<h1 class="game-over">Pontos: ${pontos}</h1>
+        <h1 class="game-over">Fim de jogo</h1>
+        <div id='reiniciar' onClick='document.location.reload(true)'>Reiniciar</div>`;
+        //gameOverMusic();
         clearInterval(leftInterval);
       }, 700);
 
