@@ -2,4 +2,4 @@
 
 ## jogue no link abaixo
 
-[I'm an inline-style link with title - Jogo do Dinossauro](https://www.jogos.alissonescorcio.life/DIO-jogo-dinossauro/index.html "Jogo do Dinossauro")
+[Jogo do Dinossauro](https://www.jogos.alissonescorcio.life/DIO-jogo-dinossauro/index.html "Jogo do Dinossauro")
