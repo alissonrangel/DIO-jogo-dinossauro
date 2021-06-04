@@ -5,7 +5,7 @@ body{
 .dino{
     width: 60px;
     height: 60px;
-    background-image: url('./dino.png');
+    background-image: url('./dino2.png');
     position: absolute;
     bottom: 0px;
 }
@@ -15,7 +15,7 @@ body{
     width: 60px;
     height: 60px;
     bottom: 0px;
-    background: url('./cactus.png');
+    background: url('./cactus2.png');
 }
 
 .game-over{
