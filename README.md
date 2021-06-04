@@ -1,6 +1,6 @@
 # Repositório do projeto jogo de dinossauro para o bootcamp da DIO
 
-![alt text](https://github.com/alissonrangel/DIO-jogo-dinossauro/blob/main/game.png?raw=true)
+![alt text](https://github.com/alissonrangel/DIO-jogo-dinossauro/blob/master/game.png?raw=true)
 
 ## jogue no link abaixo
 
